@@ -1,0 +1,30 @@
+3306/tcp open  mysql   MySQL 5.0.67
+443/tcp open  ssl/http Apache httpd 2.0.59 ((Unix) PHP/5.0.4 mod_ssl/2.0.59 OpenSSL/0.9.8t DAV/2)
+20000/tcp open  http    MiniServ 0.01 (Webmin httpd)
+79/tcp open  finger  Sun Solaris fingerd
+143/tcp open  imap    Dovecot imapd
+513/tcp open  login
+53/tcp open  domain  ISC BIND 9.8.1-P1
+587/tcp open smtp Sendmail 8.14.3/8.14.3
+
+OS: SUN SOLARIS 10|9, UNIX
+
+
+
+21/tcp    open  ftp
+22/tcp    open  ssh
+53/tcp    open  domain
+79/tcp    open  finger
+80/tcp    open  http
+143/tcp   open  imap
+443/tcp   open  https
+513/tcp   open  login
+514/tcp   open  shell
+587/tcp   open  submission
+3306/tcp  open  mysql
+6000/tcp  open  X11
+6112/tcp  open  dtspc
+8000/tcp  open  http-alt
+8001/tcp  open  vcom-tunnel
+10000/tcp open  snet-sensor-mgmt
+20000/tcp open  dnp

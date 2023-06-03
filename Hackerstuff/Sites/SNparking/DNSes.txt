@@ -1,0 +1,22 @@
+[*] std: Performing General Enumeration against: goverment.ru...
+[!] Wildcard resolution is enabled on this domain
+[!] It is resolving to 2706909.sedoparking.com
+[!] It is resolving to 64.190.63.136
+[!] All queries will resolve to this list of addresses!!
+[-] DNSSEC is not configured for goverment.ru
+[*]      SOA ns1.snparking.ru 37.221.193.103
+[*]      SOA ns1.snparking.ru 194.63.142.195
+[*]      NS ns2.snparking.ru 62.122.170.168
+[*]      NS ns2.snparking.ru 5.45.106.252
+[*]      NS ns1.snparking.ru 194.63.142.195
+[*]      NS ns1.snparking.ru 37.221.193.103
+[*]      MX void.blackhole.mx 95.217.0.12
+[*]      MX void.blackhole.mx 195.201.28.161
+[*]      MX void.blackhole.mx 78.47.159.103
+[*]      MX void.blackhole.mx 2a01:4f8:1c17:4376::2
+[*]      MX void.blackhole.mx 2a01:4f9:c010:2ce2::2
+[*]      MX void.blackhole.mx 2a01:4f8:1c0c:54b0::2
+[*]      A goverment.ru 91.195.240.126
+[*]      A goverment.ru 91.195.240.135
+[*]      TXT goverment.ru 901f1619f05464fb15c097197fac274238181ed6
+[*] Enumerating SRV Records

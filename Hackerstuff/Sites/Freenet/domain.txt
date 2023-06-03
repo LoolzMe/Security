@@ -1,0 +1,10 @@
+ std: Performing General Enumeration against: www.free.net...
+ DNSSEC is not configured for www.free.net
+      SOA ns1.free.net 147.45.15.34
+      SOA ns1.free.net 2001:640:1:4::34
+      MX portal.free.net 147.45.15.36
+      MX portal.free.net 2001:640:1:4::36
+      CNAME www.free.net portal.free.net
+      A portal.free.net 147.45.15.36
+      CNAME www.free.net portal.free.net
+      AAAA portal.free.net 2001:640:1:4::36

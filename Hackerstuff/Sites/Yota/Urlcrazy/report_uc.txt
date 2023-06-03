@@ -1,0 +1,18 @@
+www.yota.ru 94.25.232.249    RUSSIAN FEDERATION     
+Character Omission     www.yta.ru                     45.141.79.226    RUSSIAN FEDERATION
+Character Repeat       www.yotaa.ru                   91.245.224.65    RUSSIAN FEDERATION
+Character Swap         www.yoat.ru                    88.214.35.181    RUSSIAN FEDERATION
+Character Replacement  www.tota.ru                    95.213.224.241   RUSSIAN FEDERATION
+Character Replacement  www.uota.ru                    194.58.112.165   RUSSIAN FEDERATION ns1.shop.reg.ru.                                           
+Character Replacement  www.ypta.ru                    188.244.190.20   RUSSIAN FEDERATION                                           
+Character Insertion    www.yotra.ru                   77.222.56.94     RUSSIAN FEDERATION                                                                        
+Vowel Swap             www.yoto.ru                    31.31.205.163    RUSSIAN FEDERATION (RU) r3.domainparking.reg.ru.                  
+Vowel Swap             www.yuta.ru                    90.156.201.117   RUSSIAN FEDERATION (RU)                                                                         
+Bit Flipping           www.iota.ru                    213.108.249.109  RUSSIAN FEDERATION (RU)                                                                         
+Bit Flipping           www.qota.ru                    194.58.112.174   RUSSIAN FEDERATION (RU)                                                                         
+Bit Flipping           www.yotc.ru                    185.20.227.112   RUSSIAN FEDERATION (RU)                                                                         
+Homoglyphs             www.y0ta.ru                    185.26.122.17    RUSSIAN FEDERATION (RU)                                                                         
+Wrong TLD              yota.cc                        62.109.29.240    RUSSIAN FEDERATION (RU)  ns1.ispvds.com.              mail.yota.cc.                             
+Wrong TLD              yota.center                    213.159.212.237  RUSSIAN FEDERATION (RU)  ns4.misp.ru.
+
+(method)               (host/dns)                     (ip)             Location (obviously)     (maybe for smtp, mail services)
